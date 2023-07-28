@@ -1,6 +1,5 @@
 import 'package:expences_tracker/models/expense.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/date_symbols.dart';
 
 class ExpenseItem extends StatelessWidget {
   const ExpenseItem(this.expense, {super.key});
@@ -16,6 +15,7 @@ class ExpenseItem extends StatelessWidget {
           vertical: 16,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               expense.title,
